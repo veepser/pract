@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание уроков</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #9b59b6;
+            padding-bottom: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        th, td {
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #6a1b9a;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2e6ff;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        .class-header {
+            background-color: #9b59b6 !important;
+            color: white;
+            font-weight: bold;
+        }
+
+        .lesson-number {
+            background-color: #d1c4e9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Расписание</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th class="class-header">5 "а"</th>
+                <th class="class-header">5 "б"</th>
+                <th class="class-header">6 "а"</th>
+                <th class="class-header">6 "б"</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="lesson-number">1 урок</td>
+                <td>математика</td>
+                <td>литература</td>
+                <td>биология</td>
+                <td>география</td>
+            </tr>
+            <tr>
+                <td class="lesson-number">2 урок</td>
+                <td>русский язык</td>
+                <td>математика</td>
+                <td>информатика</td>
+                <td>литература</td>
+            </tr>
+            <tr>
+                <td class="lesson-number">3 урок</td>
+                <td>география</td>
+                <td>русский</td>
+                <td>математика</td>
+                <td>информатика</td>
+            </tr>
+            <tr>
+                <td class="lesson-number">4 урок</td>
+                <td>биология</td>
+                <td>информатика</td>
+                <td>русский</td>
+                <td>история</td>
+            </tr>
+            <tr>
+                <td class="lesson-number">5 урок</td>
+                <td>физ-ра</td>
+                <td>история</td>
+                <td>физ-ра</td>
+                <td>математика</td>
+            </tr>
+            <tr>
+                <td class="lesson-number">6 урок</td>
+                <td>история</td>
+                <td><span class="empty">-</span></td>
+                <td><span class="empty">-</span></td>
+                <td>физ-ра</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Здесь можно вставить фото -->
+    <!-- Пример: -->
+    <!-- <img src="школьный_логотип.jpg" alt="Логотип школы" class="schedule-image"> -->
+
+</body>
+</html>
