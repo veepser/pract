@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Шапка */
+.header {
+    background: linear-gradient(to right, #e0f7fa, #b3e5fc);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #666;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Основной контейнер */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Секции */
+.section {
+    flex: 1 1 600px;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    color: #ff6b6b;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Сетка видео */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.video-placeholder {
+    background-color: #eee;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.video-placeholder:hover {
+    background-color: #ddd;
+}
+
+.video-placeholder span {
+    font-size: 24px;
+    color: #666;
+}
+
+/* Боковая панель */
+.sidebar {
+    flex: 0 0 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    align-self: flex-start;
+}
+
+.links-box {
+    border: 3px solid #4a4aff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.links-box h3 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.links-box ul {
+    list-style: none;
+}
+
+.links-box li {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+}
+
+.links-box a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.links-box a:hover {
+    color: #4a4aff;
+}
+
+/* Подвал */
+.footer {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #2e7d32;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.vk-link img {
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.vk-link:hover img {
+    transform: scale(1.05);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: 1 1 100%;
+    }
+
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .logo {
+        font-size: 36px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">TA</div>
+        <h1>Travel Agency</h1>
+    </header>
+
+    <main class="container">
+        <!-- Блок "Любите экскурсии?" -->
+        <section class="section">
+            <h2>Любите экскурсии?</h2>
+            <div class="video-grid">
+                <div class="video-placeholder"><span>▶</span></div>
+                <div class="video-placeholder"><span>▶</span></div>
+                <div class="video-placeholder"><span>▶</span></div>
+                <div class="video-placeholder"><span>▶</span></div>
+            </div>
+        </section>
+
+        <!-- Блок "Полезные ссылки" -->
+        <aside class="sidebar">
+            <div class="links-box">
+                <h3>Полезные ссылки</h3>
+                <ul>
+                    <li><a href="#">Билеты</a></li>
+                    <li><a href="#">Отели</a></li>
+                    <li><a href="#">Чек-лист</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Блок "Хотите на море?" -->
+        <section class="section">
+            <h2>Хотите на море?</h2>
+            <div class="video-grid">
+                <div class="video-placeholder"><span>▶</span></div>
+                <div class="video-placeholder"><span>▶</span></div>
+            </div>
+        </section>
+
+        <!-- Блок "Всего понемногу?" -->
+        <section class="section">
+            <h2>Всего понемногу?</h2>
+            <div class="video-grid">
+                <div class="video-placeholder"><span>▶</span></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Напиши — получи скидку!</p>
+        <a href="#" class="vk-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/440px-VK_Compact_Logo_%282021-present%29.svg.png" alt="VK" width="40">
+        </a>
+    </footer>
+</body>
+</html>

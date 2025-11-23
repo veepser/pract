@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Горные экскурсии</title>
+    <style>
+        header {
+            background: linear-gradient(to bottom, lightblue, white);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+            border-bottom: 1px dotted #666;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .gallery {
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+      
+            opacity: 0.7; 
+            transition: all 0.3s ease;
+        }
+
+        .gallery img:hover {
+       
+
+      
+            opacity: 1;
+
+   
+            width: 170px;
+            height: 220px;
+
+            border: 6px solid navy;
+
+
+            padding: 5px;
+
+
+            transition: all 0.5s ease-out;
+        }
+
+        .text {
+            width: 300px;
+            color: rgb(113, 154, 179);
+            line-height: 1.8;
+            font-size: 2em;
+        }
+
+        .rt {
+            text-align: right;
+            font-style: italic;
+        }
+
+
+
+
+        .text p:hover {
+            font-size: 45px;
+            color: navy;
+        }
+
+
+        .text .rt:hover {
+            color: darkorange;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#">Сезонные акции</a>
+        <a href="#">Контакты</a>
+    </header>
+
+    <h1>Горные экскурсии</h1>
+
+    <div class="container">
+
+        <div class="gallery">
+            <img src="gora1.png" alt="Гора 1">
+            <img src="gora2.png" alt="Гора 2">
+            <img src="gora3.png" alt="Гора 3">
+            <img src="gora4.png" alt="Гора 4">
+            <img src="gora5.png" alt="Гора 5">
+            <img src="gora6.png" alt="Гора 6">
+        </div>
+
+        <div class="text">
+            <!-- Обернули каждую строку в <p>, чтобы работал :hover -->
+            <p>Только</p>
+            <p class="rt">горы!</p>
+            <p>Только</p>
+            <p class="rt">вперёд!</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

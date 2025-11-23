@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Горные экскурсии</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+            border-bottom: 1px dotted #666;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .gallery {
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .text {
+            width: 300px;
+            color: rgb(113, 154, 179);
+            line-height: 1.8;
+            font-size: 2em;
+        }
+
+        .rt {
+            text-align: right;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Сезонные акции</a>
+        <a href="#">Контакты</a>
+    </nav>
+
+    <h1>Горные экскурсии</h1>
+
+    <div class="container">
+
+        <div class="gallery">
+            <img src="gora1.png" alt="Гора 1">
+            <img src="gora2.png" alt="Гора 2">
+            <img src="gora3.png" alt="Гора 3">
+            <img src="gora4.png" alt="Гора 4">
+            <img src="gora5.png" alt="Гора 5">
+            <img src="gora6.png" alt="Гора 6">
+        </div>
+
+        <div class="text">
+            <div>Только</div>
+            <div class="rt">горы!</div>
+            <div>Только</div>
+            <div class="rt">вперёд!</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

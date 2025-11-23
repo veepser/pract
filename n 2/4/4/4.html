@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Зоопарк редких животных</title>
+    <style>
+        .container {
+            width: 870px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: purple;
+        }
+
+        .main-info {
+            float: left;
+            width: 400px;
+            margin-right: 20px;
+        }
+
+        .main-info h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: blue;
+        }
+
+        .main-info p {
+            margin-bottom: 15px;
+        }
+
+        .main-info img {
+            width: 100%;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .advertisement {
+            float: right;
+            width: 350px;
+            margin-top: 90px;
+            padding: 30px;
+            border: 2px dotted navy;
+            box-sizing: border-box;
+        }
+
+        .advertisement h3 {
+            margin-top: 0;
+            color:blue;
+        }
+
+        .advertisement a {
+            color: navy;
+            text-decoration: underline;
+        }
+
+        .ad-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .ad-images img {
+            width: 48%;
+            height: auto;
+            display: block;
+        }
+
+        .reviews {
+            width: 870px;
+            float: left;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        .review {
+            width: 350px;
+            padding-left: 10px;
+            border-left: 10px double navy;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .review .name {
+            color: firebrick;
+            font-weight: bold;
+            border-bottom: 1px dotted firebrick;
+            padding-bottom: 3px;
+            margin-bottom: 5px;
+        }
+
+        .review p {
+            line-height: 1.6;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Зоопарк редких животных</h1>
+
+        <section class="main-info">
+            <h2>Более 150 видов</h2>
+            <p>Вы увидите крупных диких представителей живой природы, а также редких птиц, змей и многое другое!</p>
+            <img src="shaitan.png" alt="shaitan">
+        </section>
+
+        <div class="advertisement">
+            <h3>Внимание! Специальное предложение от партнёра!</h3>
+            <p><a href="#">Щенки хаски</a> от заводчика со всеми документами</p>
+            <div class="ad-images">
+                <img src="pes1.png" alt="pes">
+                <img src="pes2.png" alt="pes">
+            </div>
+        </div>
+
+        <div class="reviews">
+
+            <div class="review">
+                <div class="name">Олег</div>
+                <p>Были в серпентарии. Ребёнок в восторге!</p>
+            </div>
+
+            <div class="review">
+                <div class="name">Наталья</div>
+                <p>Спасибо за экскурсию! Очень интересно!</p>
+            </div>
+
+            <div class="review">
+                <div class="name">Анна</div>
+                <p>Так и не попали к птицам. жаль... Однако, остальное очень здорово!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зоопарк</title>
+    <style>
+        :root {
+    --bg-color: #006699;
+    --white-color: white;
+    --black-color: #333;
+    --red-color: #FF6B6B;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: var(--bg-color);
+            color: var(--white-color);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        /* Контентный блок */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: var(--white-color);
+        }
+
+        /* Заголовок */
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: var(--black-color);
+        }
+
+        /* Галерея */
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Подзаголовки */
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--red-color);
+            border-bottom: 2px solid var(--red-color);
+            padding-bottom: 5px;
+        }
+
+        /* Список со стрелками */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--red-color);
+            font-weight: bold;
+        }
+
+        /* Разделитель */
+        hr {
+            border: 0;
+            height: 2px;
+            background: var(--bg-color);
+            margin: 30px 0;
+        }
+
+        /* Текст */
+        p {
+            text-align: justify;
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: var(--bg-color);
+            color: white;
+            padding: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 10px;
+        }
+
+        .contact-item span:first-child {
+            font-weight: bold;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://img.lovepik.com/free-png/20220120/lovepik-zoo-big-lion-creative-art-illustration-design-png-image_401563049_wh300.png" alt="Логотип">
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Зоопарк</h1>
+
+        <div class="gallery">
+            <img src="https://avatars.mds.yandex.net/i?id=63372bfd20e7b275013a79af80344158-4936012-images-thumbs&n=13" alt="Слон">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Kameelperdkoei%2C_Groenkloof_Natuurreservaat.jpg/960px-Kameelperdkoei%2C_Groenkloof_Natuurreservaat.jpg" alt="Жираф">
+            <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_66effa5c4fa42664cd47e473_682b22ed9d87d0214ed64b5e/scale_1200" alt="Попугай">
+        </div>
+
+        <h2>Наши обитатели — гордость зоопарка 😊</h2>
+
+        <ul>
+            <li><strong>Слон Арсен Гладиатор</strong> — самый добродушный гигант</li>
+            <li><strong>Жираф Димон</strong> — любит фотографироваться</li>
+            <li><strong>Попугаи Армен</strong> — настоящие артисты</li>
+            <li><strong>Белые волки</strong> — загадочные и величественные</li>
+        </ul>
+
+        <hr>
+
+        <h2>Любим весёлые праздники для семьи</h2>
+
+        <p>Наш зоопарк — это место, где дети и взрослые могут познакомиться с удивительным миром животных в безопасной и увлекательной обстановке. Мы регулярно проводим интерактивные программы: «Кормление слонов», «Встреча с попугаями», «Ночь в зоопарке» — и всегда рады гостям всех возрастов. Наши сотрудники — настоящие профессионалы, которые любят животных и хотят поделиться этой любовью с вами. Приходите всей семьёй — здесь каждый найдёт занятие по душе: от прогулок до мастер-классов по рисованию животных. У нас даже есть свой питомец-посланник — Джон, который встречает гостей у входа и делает фото на память!</p>
+    </div>
+
+    <footer>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>Эл. почта:</span>
+                <span>zoo@zoo.ru</span>
+            </div>
+            <div class="contact-item">
+                <span>Телефон:</span>
+                <span>+7 777 777 77 77</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

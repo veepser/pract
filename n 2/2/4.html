@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Дайвинг-клуб</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .header {
+            background-color: #00a651;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-button {
+            padding: 3px 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav-button.green {
+            border-color: green;
+            color: green;
+        }
+
+        .main-content {
+            padding: 10px;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        .section-title {
+            color: #0057b8;
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            background-color: #80e0c0;
+            padding: 5px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .features-title {
+            background-color: #80e040;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .features-box {
+            border: 1px solid #0057b8;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .features-box p {
+            margin: 2px 0;
+        }
+
+        .features-box ul {
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        .features-box li {
+            margin: 2px 0;
+        }
+
+        .icons-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+
+        .icon-item {
+            text-align: center;
+            width: 45%;
+        }
+
+        .icon-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .contact-info {
+            border: 1px solid #0057b8;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .contact-info div {
+            margin: 2px 0;
+        }
+
+        .contact-info label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="i1.png" alt="Логотип" class="logo">
+        <div class="nav-buttons">
+            <a href="#" class="nav-button green">Магазин</a>
+            <a href="#" class="nav-button">На главную</a>
+            <a href="#" class="nav-button">Дайв-туры</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1 class="section-title">О занятиях</h1>
+
+        <div class="image-container">
+            <img src="i2.jpg" alt="Подводный мир">
+        </div>
+
+        <div class="features-title">Наши особенности</div>
+        <div class="features-box">
+            <p>Ваша безопасность, качественное обучение и комфортные условия — наш приоритет, поэтому:</p>
+            <ul>
+                <li>группы до 4-х человек;</li>
+                <li>работаем круглосуточно;</li>
+                <li>индивидуальный подход;</li>
+                <li>выдаём сертификат PADI;</li>
+            </ul>
+        </div>
+
+        <div class="icons-container">
+            <div class="icon-item">
+                <img src="i3.jpg" alt="Дайвер">
+            </div>
+            <div class="icon-item">
+                <img src="i4.jpg" alt="Маска">
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <div><label>Тел.:</label> <span></span></div>
+            <div><label>Эл.почта:</label> <span></span></div>
+        </div>
+    </div>
+</body>
+</html>

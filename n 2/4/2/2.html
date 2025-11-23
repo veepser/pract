@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Design</title>
+    <style>
+        nav {
+            height: 30px;
+            border-top: 2px solid blueviolet;
+            border-bottom: 2px solid blueviolet;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: purple;
+            font-weight: bold;
+        }
+
+        .logo {
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        .site-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin: 20px 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .posts {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+        }
+
+        .post-column {
+            width: 250px;
+            padding: 15px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .post-column h2 {
+            background-color: #00ced1;
+            padding: 10px;
+            margin: 0 0 15px 0;
+            text-align: center;
+            color: purple; 
+        }
+
+        .post-column p {
+            line-height: 1.6;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .post-column img {
+            width: 100%;
+            display: block;
+            margin-top: auto;
+        }
+
+        .contacts {
+            width: 1000px;
+            margin: 30px auto;
+            padding: 15px;
+            background-color: lightblue;
+            border: 1px solid #ccc;
+        }
+
+        .contacts h4 {
+            margin-top: 0;
+            font-weight: bold;
+            padding-bottom: 5px;
+            background-color: white;
+        }
+
+        .contacts div {
+            padding: 8px 0;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="logo.png" alt="Логотип Pixel Design" width="150">
+    </div>
+
+    <nav>
+        <a href="#">Новости</a>
+        <a href="#">Конкурс</a>
+        <a href="#">Планы развития</a>
+    </nav>
+
+    <h1 class="site-title">Pixel Design</h1>
+
+    <div class="posts">
+        <div class="post-column">
+            <h2>Наши последние новости</h2>
+            <p>В нашей студии новый дизайнер: пиксель Cube. Именно он будет выполнять ваши заказы по трёхмерной графике. Увлекается ландшафтным и интерьерным дизайном. Недавно он давал интервью газете Progress news.</p>
+            <img src="1.png" alt="новости">
+        </div>
+        <div class="post-column">
+            <h2>Готовимся к конкурсу</h2>
+            <p>Весной следующего года мы участвуем в конкурсе дизайна. Наши работы будут представлены в направлениях: веб-дизайн, полиграфический дизайн, дизайн интерьеров. По каждому направлению мы собираемся представить несколько работ, которые пройдут предварительный отбор в нашей студии.</p>
+            <img src="2.png" alt="конкурс">
+        </div>
+        <div class="post-column">
+            <h2>Планы развития</h2>
+            <p>В этом месяце мы готовим годовое планирование нашей работы. Кроме того, что мы принимаем и выполняем клиентские заказы по дизайну, мы участвуем в конкурсах, учимся на онлайн курсах, повышающих наше мастерство, просматриваем сборники лучших работ, которые можно найти в Интернете.</p>
+            <img src="3.png" alt="план">
+        </div>
+    </div>
+
+    <div class="contacts">
+        <h4>Контакты</h4>
+        <div>Адрес: г. Техноград, ул. Дисплейная, 15</div>
+        <br>
+        <div>Тел: 8895-6341</div>
+    </div>
+
+</body>
+</html>
