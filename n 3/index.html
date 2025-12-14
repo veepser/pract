@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя семья – мой космос</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="dark-theme">
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Логотип: Моя семья – мой космос" width="180">
+            </div>
+            <nav class="nav-menu">
+                <a href="registration.html">Регистрация</a>
+                <a href="#auth">Авторизация</a>
+                <a href="account.html">Личный кабинет</a>
+                <a href="#competitions">Конкурсы</a>
+                <a href="#about">О нас</a>
+                <a href="#search">Поиск</a>
+                <a href="#footer">Контакты</a>
+            </nav>
+            <a href="index-light.html" class="theme-toggle">☀️ Светлая тема</a>
+        </div>
+    </header>
+
+    <section class="slider-section">
+        <div class="container">
+            <h2>Популярные конкурсы</h2>
+            <div class="slide">
+                <img src="img//fam2.jpeg" alt="Конкурс">
+                <h3>Космический танец семьи</h3>
+                <p>Семейный танцевальный марафон в стиле космос!</p>
+                <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5.0)</div>
+                <a href="competition.html" class="btn">Подробнее</a>
+            </div>
+            <div class="slide-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="auth" class="auth-section">
+        <div class="container">
+            <h2>Вход</h2>
+            <form>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Пароль">
+                <button type="button" class="btn-active">Войти</button>
+                <a href="#" class="link">Забыли пароль?</a>
+            </form>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>О нас</h2>
+            <div class="about-content">
+                <p>Мы объединяем семьи через творчество, игры и совместные победы. Наш девиз: «Моя семья — мой космос»!</p>
+                <img src="img//fam3.jpeg" alt="О нас" class="about-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="welcome-section">
+        <div class="container">
+            <h2>Приветствие от организаторов</h2>
+            <div class="video-container">
+                <iframe width="720" height="405" src="https://rutube.ru/play/embed/cb7b3c0aad5c8a1e5cf5d22f59cc65b3/" style="border: none;" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+    </section>
+
+    <section id="competitions" class="competitions-section">
+        <div class="container">
+            <h2>Конкурсы</h2>
+            <div class="competitions-grid">
+                <div class="competition-card">
+                    <img src="img/fam3.jpeg" alt="Конкурс 1">
+                    <h3>Космический танец</h3>
+                    <p>Танцуйте всей семьёй!</p>
+                    <div class="card-stats">
+                        <span>👥 123 участника</span>
+                        <span>⭐️ 4.8</span>
+                    </div>
+                    <a href="competition.html" class="btn">Записаться</a>
+                </div>
+                <div class="competition-card">
+                    <img src="img/fam4.jpeg" alt="Конкурс 2">
+                    <h3>Фото-космос</h3>
+                    <p>Поделитесь семейным фото в космосе</p>
+                    <div class="card-stats">
+                        <span>👥 89 участников</span>
+                        <span>⭐️ 4.7</span>
+                    </div>
+                    <a href="competition.html" class="btn">Записаться</a>
+                </div>
+                <div class="competition-card">
+                    <img src="img/fam6.jpeg" alt="Конкурс 3">
+                    <h3>Космическая кухня</h3>
+                    <p>Готовьте вместе с детьми</p>
+                    <div class="card-stats">
+                        <span>👥 67 участников</span>
+                        <span>⭐️ 4.9</span>
+                    </div>
+                    <a href="competition.html" class="btn">Записаться</a>
+                </div>
+                <div class="competition-card">
+                    <img src="img/_fam.jpeg" alt="Конкурс 4">
+                    <h3>Семейный квест</h3>
+                    <p>Решайте загадки вместе</p>
+                    <div class="card-stats">
+                        <span>👥 156 участников</span>
+                        <span>⭐️ 4.6</span>
+                    </div>
+                    <a href="competition.html" class="btn">Записаться</a>
+                </div>
+                <div class="competition-card">
+                    <img src="img/fam2.jpeg" alt="Конкурс 5">
+                    <h3>Космический рисунок</h3>
+                    <p>Нарисуйте свою семью в космосе</p>
+                    <div class="card-stats">
+                        <span>👥 201 участник</span>
+                        <span>⭐️ 4.9</span>
+                    </div>
+                    <a href="competition.html" class="btn">Записаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="search" class="search-section">
+        <div class="container">
+            <h2>Поиск конкурсов</h2>
+            <form>
+                <input type="text" placeholder="Название или описание...">
+                <button type="button" class="btn-active">Поиск</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="review-card">
+                <img src="img/avatar.jpg" alt="Анна И." class="avatar">
+                <div class="review-content">
+                    <h4>Анна Иванова</h4>
+                    <p>Невероятно! Мы в восторге от конкурса «Космическая кухня»!</p>
+                    <span class="review-date">15 ноября 2025</span>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="img/avatar.jpg" alt="Дмитрий П." class="avatar">
+                <div class="review-content">
+                    <h4>Дмитрий Петров</h4>
+                    <p>Организация на высшем уровне. Ждём следующий сезон!</p>
+                    <span class="review-date">10 ноября 2025</span>
+                </div>
+            </div>
+            <div class="review-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe-section">
+        <div class="container">
+            <h2>Подпишитесь на новости</h2>
+            <form>
+                <input type="email" placeholder="Ваш email">
+                <label class="checkbox">
+                    <input type="checkbox"> Согласен на обработку персональных данных
+                </label>
+                <button type="button" class="btn-active">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <p>📞 <a href="tel:+74842234567">+7 (4842) 23-45-67</a></p>
+            <p>✉️ <a href="mailto:family@cosmos.ru">family@cosmos.ru</a></p>
+            <nav class="footer-nav">
+                <a href="index.html">Главная</a>
+                <a href="index-light.html">Главная-светлая</a>
+                <a href="registration.html">Регистрация</a>
+                <a href="competition.html">Конкурс</a>
+                <a href="account.html">Личный кабинет</a>
+                <a href="404.html">404</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
